@@ -1,0 +1,19 @@
+﻿<Window x:Class="Restaurantexxi.MenuRegistrados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurantexxi"
+        mc:Ignorable="d"
+        Title="MenuRegistrados" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="23" Margin="443,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.242,0.522"/>
+        <Label x:Name="lbl_rut" Content="Rut o Nº Pasaporte" HorizontalAlignment="Left" Margin="270,67,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_cantidad" Content="Cantidad de Personas" HorizontalAlignment="Left" Margin="270,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.289,0.154"/>
+        <DataGrid x:Name="dtgrid_registro" HorizontalAlignment="Left" Height="100" Margin="209,158,0,0" VerticalAlignment="Top" Width="387"/>
+        <Button x:Name="btn_ingresar" Content="Ingresar Cliente" HorizontalAlignment="Left" Margin="334,302,0,0" VerticalAlignment="Top" Width="146" Height="50"/>
+        <Button x:Name="btn_cancelar" Content="Volver" HorizontalAlignment="Left" Margin="622,314,0,0" VerticalAlignment="Top" Width="133" Height="38" Click="btn_cancelar_Click"/>
+        <ComboBox x:Name="cbox_cantidad" HorizontalAlignment="Left" Margin="443,115,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
