@@ -122,5 +122,71 @@ namespace Restaurantexxi
             txt_apellido.Visibility = Visibility.Visible;
             txt_nombre.IsEnabled = true;
         }
+
+        private void Txt_rut_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txt_rut.Text.Length;
+
+            int ascii = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (ascii >= 48 && ascii <= 57)
+            {
+                if (tamanio < 9)
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Txt_nombre_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txt_rut.Text.Length;
+
+            if (tamanio < 24)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void Txt_apellido_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txt_rut.Text.Length;
+
+            if (tamanio < 24)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Txt_email_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txt_rut.Text.Length;
+
+            if (tamanio < 49)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -215,5 +215,92 @@ namespace Restaurantexxi
         {
             this.Close();
         }
+
+        private void Txtrut_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txtrut.Text.Length;
+
+            int ascii = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (ascii >= 48 && ascii <= 57)
+            {
+                if (tamanio < 9)
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+            else
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void TxtIdReserva_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int ascii = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (ascii >= 48 && ascii <= 57)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtEmail_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txtrut.Text.Length;
+
+            int ascii = Convert.ToInt32(Convert.ToChar(e.Text));
+
+                if (tamanio < 49)
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+
+        }
+
+        private void TxtApe_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txtrut.Text.Length;
+
+            int ascii = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (tamanio < 24)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtNom_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int tamanio = txtrut.Text.Length;
+
+            int ascii = Convert.ToInt32(Convert.ToChar(e.Text));
+
+            if (tamanio < 24)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -12,10 +12,10 @@
         <Label x:Name="lbl_email" Content="E-Mail" HorizontalAlignment="Left" Margin="214,227,0,0" VerticalAlignment="Top" Height="27"/>
         <Label x:Name="lbl_cantidad" Content="Seleccione mesa" HorizontalAlignment="Left" Margin="214,281,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.816,-0.385" Height="27" Width="123"/>
         <Label x:Name="lbl_apellido" Content="Apellido" HorizontalAlignment="Left" Margin="214,198,0,0" VerticalAlignment="Top" Height="27"/>
-        <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="23" Margin="418,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
-        <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="23" Margin="418,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
-        <TextBox x:Name="txt_apellido" HorizontalAlignment="Left" Height="24" Margin="418,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" RenderTransformOrigin="0.292,0.087"/>
-        <TextBox x:Name="txt_email" HorizontalAlignment="Left" Height="24" Margin="418,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187"/>
+        <TextBox x:Name="txt_rut" HorizontalAlignment="Left" Height="23" Margin="418,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" PreviewTextInput="Txt_rut_PreviewTextInput"/>
+        <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="23" Margin="418,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" PreviewTextInput="Txt_nombre_PreviewTextInput"/>
+        <TextBox x:Name="txt_apellido" HorizontalAlignment="Left" Height="24" Margin="418,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" RenderTransformOrigin="0.292,0.087" PreviewTextInput="Txt_apellido_PreviewTextInput"/>
+        <TextBox x:Name="txt_email" HorizontalAlignment="Left" Height="24" Margin="418,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" PreviewTextInput="Txt_email_PreviewTextInput"/>
         <ComboBox x:Name="cbox_cantidad" HorizontalAlignment="Left" Margin="418,285,0,0" VerticalAlignment="Top" Width="186" Height="23"/>
         <Button x:Name="btn_ingresar" Content="Ingresar Asignacion" HorizontalAlignment="Left" Margin="214,487,0,0" VerticalAlignment="Top" Width="123" Height="49" Click="Btn_ingresar_Click"/>
         <Button x:Name="btn_cancelar" Content="Volver" HorizontalAlignment="Left" Margin="513,493,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="-0.587,0.1" Height="35" Click="btn_cancelar_Click"/>

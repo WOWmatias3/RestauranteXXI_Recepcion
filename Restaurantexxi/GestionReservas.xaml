@@ -48,20 +48,20 @@
         <Label x:Name="lbRutCliente" Content="Rut Cliente" HorizontalAlignment="Left" Margin="165,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.003,0.614" Width="80"/>
         <Button x:Name="btnAgregar" Content="Agregar Reserva" HorizontalAlignment="Left" Margin="241,498,0,0" VerticalAlignment="Top" Width="145" Height="36" Click="Button_Click"/>
         <Button x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" Margin="568,498,0,0" VerticalAlignment="Top" Width="105" Height="36" Click="BtnVolver_Click"/>
-        <TextBox x:Name="txtrut" HorizontalAlignment="Left" Height="23" Margin="340,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBox x:Name="txtrut" HorizontalAlignment="Left" Height="23" Margin="340,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" PreviewTextInput="Txtrut_PreviewTextInput"/>
         <RadioButton x:Name="rbNuevaReserva" Content="Nueva Reserva" HorizontalAlignment="Left" Margin="225,96,0,0" VerticalAlignment="Top" Checked="RbNuevaReserva_Checked"/>
         <RadioButton x:Name="rbCancelarReserva" Content="Cancelar Reserva" HorizontalAlignment="Left" Margin="458,96,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <DataGrid x:Name="dtgReservas" IsEnabled="False" HorizontalAlignment="Left" Height="128" Margin="185,343,0,0" VerticalAlignment="Top" Width="458"/>
         <Label x:Name="lbIdReserva" Content="Id Reserva" HorizontalAlignment="Left" Margin="165,303,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtIdReserva" HorizontalAlignment="Left" Height="23" Margin="340,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <TextBox x:Name="txtIdReserva" HorizontalAlignment="Left" Height="23" Margin="340,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" PreviewTextInput="TxtIdReserva_PreviewTextInput"/>
         <Label Content="" HorizontalAlignment="Left" Margin="165,226,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="568,142,0,0" VerticalAlignment="Top" Width="75" Click="BtnBuscar_Click"/>
         <Label x:Name="lbNom" Content="Nombre" HorizontalAlignment="Left" Margin="95,182,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbApellido" Content="Apellido" HorizontalAlignment="Left" Margin="303,182,0,0" VerticalAlignment="Top" Width="56"/>
         <Label x:Name="lbEmail" Content="Email" HorizontalAlignment="Left" Margin="517,182,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.298,0.625"/>
-        <TextBox x:Name="txtNom" HorizontalAlignment="Left" Height="23" Margin="150,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtApe" HorizontalAlignment="Left" Height="23" Margin="359,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="558,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNom" HorizontalAlignment="Left" Height="23" Margin="150,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="TxtNom_PreviewTextInput"/>
+        <TextBox x:Name="txtApe" HorizontalAlignment="Left" Height="23" Margin="359,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="TxtApe_PreviewTextInput"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="558,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="TxtEmail_PreviewTextInput"/>
 
     </Grid>
 </Window>
