@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BLL;
+using MahApps.Metro.Controls;
 
 namespace Restaurantexxi
 {
@@ -19,7 +20,7 @@ namespace Restaurantexxi
     /// Lógica de interacción para GestionReservas.xaml
     /// </summary>
     /// 
-    public partial class GestionReservas : Window
+    public partial class GestionReservas : MetroWindow
     {
         bool clienteexiste = false;
         public GestionReservas()

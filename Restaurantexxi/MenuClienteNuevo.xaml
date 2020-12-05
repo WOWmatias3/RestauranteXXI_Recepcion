@@ -1,8 +1,9 @@
-﻿<Window x:Name="win_load" x:Class="Restaurantexxi.MenuClienteNuevo"
+﻿<mah:MetroWindow x:Name="win_load" x:Class="Restaurantexxi.MenuClienteNuevo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Restaurantexxi"
         mc:Ignorable="d"
         Title="MenuClienteNuevo" Height="586.995" Width="838.515" WindowStartupLocation="CenterScreen" Loaded="Win_load_Loaded">
@@ -27,4 +28,4 @@
         <Label Content="Asignación Mesas" HorizontalAlignment="Left" Margin="301,27,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
 
     </Grid>
-</Window>
+</mah:MetroWindow>

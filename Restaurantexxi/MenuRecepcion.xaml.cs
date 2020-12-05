@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace Restaurantexxi
 	/// <summary>
 	/// Lógica de interacción para MenuRecepcion.xaml
 	/// </summary>
-	public partial class MenuRecepcion : Window
+	public partial class MenuRecepcion : MetroWindow
 	{
 		public MenuRecepcion()
 		{
@@ -34,14 +35,14 @@ namespace Restaurantexxi
 		private void btn_reserva_Click(object sender, RoutedEventArgs e)
 		{
 			GestionReservas mreserv = new GestionReservas();
-
+            mreserv.Owner = this;
 			mreserv.ShowDialog();
 		}
 
 		private void btn_cliente_Click(object sender, RoutedEventArgs e)
 		{
 			MenuClienteNuevo mcli = new MenuClienteNuevo();
-
+            mcli.Owner = this;
 			mcli.ShowDialog();
 		}
 	}

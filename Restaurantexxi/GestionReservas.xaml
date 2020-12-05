@@ -1,4 +1,4 @@
-﻿<Window
+﻿<mah:MetroWindow
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Restaurantexxi"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Restaurantexxi.GestionReservas"
         mc:Ignorable="d"
-        Title="GestionReservas" Height="625.358" Width="906.868">
+        Title="GestionReservas" Height="625.358" Width="906.868" WindowStartupLocation="CenterOwner">
     <Grid>
         <Label Content="Gestion Reservas" HorizontalAlignment="Left" Margin="303,53,0,0" VerticalAlignment="Top" Width="181"/>
         <DatePicker x:Name="dtpFecha" HorizontalAlignment="Left" Margin="340,226,0,0" VerticalAlignment="Top" Width="157"/>
@@ -64,4 +64,4 @@
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="558,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="TxtEmail_PreviewTextInput"/>
 
     </Grid>
-</Window>
+</mah:MetroWindow>
