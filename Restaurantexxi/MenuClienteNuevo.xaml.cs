@@ -21,7 +21,7 @@ namespace Restaurantexxi
 	/// <summary>
 	/// Lógica de interacción para MenuClienteNuevo.xaml
 	/// </summary>
-	public partial class MenuClienteNuevo : Window
+	public partial class MenuClienteNuevo : MetroWindow
 	{
 		public MenuClienteNuevo()
 		{

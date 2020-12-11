@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Restaurantexxi"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Restaurantexxi.MenuRecepcion"
         mc:Ignorable="d"
-        Title="MenuRecepcion" Height="450" Width="800">
+        Title="MenuRecepcion" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Recepción" HorizontalAlignment="Left" Margin="315,70,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Button x:Name="btn_Gestionreserva" Content="Gestión Reservas" HorizontalAlignment="Left" Margin="259,254,0,0" VerticalAlignment="Top" Width="274" Height="62" Click="btn_reserva_Click" FontSize="24"/>

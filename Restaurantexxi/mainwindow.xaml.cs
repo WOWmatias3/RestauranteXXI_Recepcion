@@ -35,7 +35,8 @@ namespace Restaurantexxi
                 MessageBox.Show("Bienvenido "+txt_nombreusuario.Text);
                 MenuRecepcion mrecep = new MenuRecepcion();
                 Close();
-                mrecep.ShowDialog();
+                mrecep.Show();
+
             }
             else
             {
